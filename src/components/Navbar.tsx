@@ -11,15 +11,15 @@ const Navbar = () => {
 
   return (
     <>
-    <div className="flex p-4">
+    <div className="flex p-4 bg-slate-100 shadow-md">
         <img src={olx} className="w-15 h-9"/>
-        <div className="flex border-2 border-spacing-1 w-70 p-2 border-black ml-5">
+        <div className="flex border-2 border-spacing-1 w-70 p-2 border-black ml-5 bg-white">
             <img src={lens} className="w-6 h-5 mt-1"/> 
-            <input placeholder="Location" className="ml-3"/>
+            <input placeholder="Location" className="ml-3 outline-none"/>
             <img src={arrow} className="w-8 h-7"/>
         </div>
-        <div className="flex h-12 ml-6 border-2 w-170 border-black">
-            <input placeholder="Find Cars, Mobile phones and more" className="ml-3 w-[36rem]"/>
+        <div className="flex h-12 ml-6 border-2 w-170 border-black bg-white">
+            <input placeholder="Find Cars, Mobile phones and more" className="ml-3 w-[36rem] outline-none"/>
             <img src={lens} className="bg-blue-600"/>
         </div>
         <div className="flex h-12 p-3 ml-10">
@@ -33,7 +33,7 @@ const Navbar = () => {
             <h1 className="font-semibold ml-3">+SELL</h1>
         </div>
     </div>
-    {loginPop && <Login/>}
+    {loginPop && <Login setLoginPop={setLoginPop}/>}
     </>
   )
 }

@@ -1,9 +1,13 @@
-import Navbar from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
+import Main from "./components/Main";
+
 
 export default function App() {
   return (
     <>
-      <Navbar/>
+    <Routes>
+      <Route path="/" element={<Main/>}/>
+    </Routes>
     </>
   )
 }
